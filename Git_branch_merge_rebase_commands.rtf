@@ -1,0 +1,155 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10840\viewh14780\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 //Commands used in this project\
+\
+1. 	Create repository on GitHub \
+	mkdir project1\
+	mkdir Project2\
+\
+2. 	cd project1\
+	git init\
+	git remote add origin \'93Repository URL\'94\
+	git remote -v\
+	vim .gitignore\
+	git status\
+	git diff\
+	git add .\
+	git status\
+	git commit -v -m \'93This is initial commit\'94\
+	git status\
+	git push -u origin master\
+\
+3. 	git checkout -b staging\
+\
+4.	//Added file \'91test1\'92 with content \'91This is first commit\'92\
+	git status\
+	git diff\
+	git add .\
+	git status\
+	git commit -v -m \'93This is first commit\'92\'94\
+	git status\
+\
+5.	git push -u origin staging \
+\
+6. 	cd ..\
+	cd project2\
+\
+7.	git clone \'93Repository URL\'94\
+\
+8. 	git checkout  staging\
+\
+9. 	// Changes made in test1 file \'93This is third commit\'94\
+\
+10.	git status\
+	git diff\
+	git add .\
+	git status\
+	git commit -v -m \'93This is second commit\'94\
+	git status\
+	git push -u origin staging \
+\
+11. 	//Move to project1\
+\
+12. 	git checkout staging\
+\
+13. 	// Change text in file test1 \'93This is third commit\'94\
+\
+14.	git status \
+	git diff\
+	git add .\
+	git status\
+	git commit -v -m \'93This is third commit\'94\
+	git status\
+	git push -u origin staging\
+	#Updates were rejected because the remote contains work that project1 do not have.\
+	git pull origin staging \
+	git status\
+	git commit -v -m \'93Commit after merge conflict\'94\
+\
+15. 	git checkout master\
+\
+16.	git merge staging\
+	\
+17. 	git checkout -b testing\
+\
+18.	//Made changes to text  \'93A is an alphabet\'94\
+	git status\
+	git diff\
+	git add .\
+	git status\
+	git commit -v -m \'93A is an alphabet\'94\
+	git status\
+\
+19. 	Repeated the step 18 seven times with B,C,D, E, F, G\
+\
+20. 	git push -u origin testing \
+\
+21. 	git checkout master\
+\
+22. 	// Made changes to text \'931 is a number\'94\
+	git status\
+	git diff\
+	git add .\
+	git status\
+	git commit -v -m \'931 is a number\'94\
+	git status\
+\
+23. 	Repeated the step 22 to seven times (2,3,4,5,6,7)\
+\
+24. 	git push -u origin master\
+\
+25.	git rebase testing\
+\
+26. 	//Changes the directory to project2\
+\
+27. 	git checkout  - -track origin/testing\
+\
+28. 	git checkout master\
+\
+29. 	git merge testing\
+\
+30 . 	both testing and master at same level\
+\
+\
+// Adding this file , commit and push to testing\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
